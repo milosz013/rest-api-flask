@@ -11,22 +11,23 @@ Prosty projekt API w Pythonie z użyciem Flask
 ## ⚙️ Uruchomienie projektu
 
 ```bash
-# 1. Sklonuj repozytorium
+# Sklonuj repozytorium
 git clone https://github.com/milosz013/rest-api-flask.git
 cd rest-api-flask
 
-# 2. (Opcjonalnie) Utwórz środowisko wirtualne
+---
+
+# 1. (Opcjonalnie) Utwórz środowisko wirtualne
 python -m venv venv
 venv\Scripts\activate        # Windows
 # lub
 source venv/bin/activate    # Linux/macOS
 
-# 3. Zainstaluj zależności
+# 2. Zainstaluj zależności
 pip install -r requirements.txt
 
-# 4. Uruchom aplikację
+# 3. Uruchom aplikację
 python app.py
-
 
 ---
 
@@ -47,3 +48,8 @@ docker run -p 5000:5000 rest-api-flask
 
 http://localhost:5000/
 
+
+# pomocniczy kod dodawania zmian do repo
+git add .
+git commit -m "Krótki opis zmiany"
+git push
