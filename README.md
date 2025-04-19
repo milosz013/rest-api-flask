@@ -1,6 +1,6 @@
 # 🚀 REST API Flask – Lab
 
-Prosty projekt API w Pythonie z użyciem Flask – wykonany zgodnie z instrukcją z Lab2.
+Prosty projekt API w Pythonie z użyciem Flask
 
 ## ✅ Wymagania
 
@@ -8,7 +8,7 @@ Prosty projekt API w Pythonie z użyciem Flask – wykonany zgodnie z instrukcj�
 - Pip
 - Flask
 
-## ⚙️ Uruchomienie projektu krok po kroku
+## ⚙️ Uruchomienie projektu
 
 ```bash
 # 1. Sklonuj repozytorium
@@ -26,3 +26,24 @@ pip install -r requirements.txt
 
 # 4. Uruchom aplikację
 python app.py
+
+
+---
+
+## 🐳 Uruchamianie z użyciem Dockera (alternatywa)
+
+Możesz uruchomić projekt również w kontenerze Docker bez instalowania Pythona lokalnie.
+
+### 1. Zbuduj obraz Dockera:
+
+```bash
+docker build -t rest-api-flask .
+
+
+# 2. Uruchom kontener
+docker run -p 5000:5000 rest-api-flask
+
+# 3. Sprawdź działanie w przeglądarce
+
+http://localhost:5000/
+
